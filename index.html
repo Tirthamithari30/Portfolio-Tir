@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirtha Mithari | T.Y. Engineer Portfolio</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --secondary: #3a7bd5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            border-bottom: 2px solid var(--primary);
+        }
+
+        .hero-h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        .hero-p { font-size: 1.2rem; color: var(--primary); font-weight: bold; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        h2 { border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 30px; }
+
+        .about-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+
+        .skills-tag {
+            display: inline-block;
+            background: var(--secondary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .project-tech { color: var(--primary); font-family: monospace; }
+
+        .contact-box {
+            text-align: center;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            padding: 40px;
+            border-radius: 15px;
+            color: white;
+        }
+
+        footer { text-align: center; padding: 20px; font-size: 0.8rem; opacity: 0.7; }
+
+        @media (max-width: 768px) {
+            .about-grid { grid-template-columns: 1fr; }
+            .hero-h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="hero-h1">Tirtha Yogesh Mithari</h1>
+    <p class="hero-p">Third Year Engineering Student @ D.Y. Patil</p>
+    <p>Python Developer | Web Specialist | Tech Enthusiast</p>
+</header>
+
+<div class="container">
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            <div>
+                <p>Based in <strong>Kolhapur</strong>, I am a developer passionate about building functional and beautiful digital systems. Currently in my third year, I have shifted my focus toward <strong>Python and Java</strong>, while maintaining a strong grip on Frontend technologies.</p>
+                <p>I love bridging the gap between hardware and software—evident in my work with gesture recognition gloves.</p>
+            </div>
+            <div>
+                <strong>Hobbies:</strong><br>
+                🏏 Cricket | 💃 Dance | 📸 Photography | ✈️ Travel
+            </div>
+        </div>
+    </section>
+
+    <hr style="opacity: 0.1; margin: 50px 0;">
+
+    <section id="skills">
+        <h2>Technical Arsenal</h2>
+        <div>
+            <span class="skills-tag">Python (Focus)</span>
+            <span class="skills-tag">Java</span>
+            <span class="skills-tag">HTML5 & CSS3</span>
+            <span class="skills-tag">Basic JavaScript</span>
+            <span class="skills-tag">Arduino Integration</span>
+            <span class="skills-tag">Problem Solving</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Key Projects</h2>
+        
+        <div class="project-card">
+            <h3>🧤 Hand Gesture Translator (Gloves)</h3>
+            <p>A hardware-software integration project that translates hand movements into text/speech for easier communication.</p>
+            <p class="project-tech">Tech: Python, Microcontrollers, Sensors</p>
+        </div>
+
+        <div class="project-card">
+            <h3>🏫 College Management System</h3>
+            <p>A comprehensive web portal for managing attendance, dashboards, and role-based access for students and teachers.</p>
+            <p class="project-tech">Tech: HTML, CSS, JavaScript, Logic</p>
+        </div>
+
+        <div class="project-card">
+            <h3>☕ The Coffee Shop Website</h3>
+            <p>A visually stunning, responsive landing page featuring interactive menus and user-centric design.</p>
+            <p class="project-tech">Tech: HTML, CSS</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-box">
+        <h2>Let's Connect</h2>
+        <p>I am currently looking for internship opportunities and collaborative projects.</p>
+        <p>Email: tirtha.mithari@email.com (Update this!)</p>
+        <p>Location: Kolhapur, Maharashtra</p>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Tirtha Yogesh Mithari | Built with Passion
+</footer>
+
+</body>
+</html>
